@@ -16,8 +16,9 @@ export default function Navbar() {
     >
       <div className="mt-[9px] h-[56px] flex items-center gap-[45px]">
         {/* Nav Items */}
+        <div className="p-4 bg-white rounded-2xl mb-8">
         <div
-          className="w-[594px] h-[56px] flex items-center justify-between px-4 py-2 bg-white rounded-full shadow text-[16px]"
+          className="w-[594px] h-[56px] flex items-center justify-between px-4 py-2 bg-white rounded-full shadow text-[16px] mt-[9px]"
           style={{ marginLeft: "109px" }}
         >
           {["Home", "Community", "Jobs", "Mentors", "Courses", "Events"].map(
@@ -34,6 +35,8 @@ export default function Navbar() {
               </button>
             )
           )}
+        </div>
+
         </div>
 
         {/* Search & Icons */}

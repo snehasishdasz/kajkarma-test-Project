@@ -22,7 +22,7 @@ export default function FilterSidebar() {
 
   return (
     <div
-      className="w-[224px] h-[362px] p-4 rounded-2xl bg-white flex flex-col justify-between border border-gray-100"
+      className="!min-w-[224px] h-[362px] p-4 rounded-2xl bg-white flex flex-col justify-between border border-gray-100"
       style={{ boxShadow: "0 0 20px rgba(102, 186, 255, 0.4)" }}
     >
       <div className="space-y-3 overflow-hidden">

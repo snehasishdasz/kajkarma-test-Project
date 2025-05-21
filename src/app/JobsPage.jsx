@@ -55,7 +55,7 @@ export default function JobsPage() {
       <Navbar />
       <div className="flex mx-[136px] gap-[34px]">
         <FilterSidebar />
-        <div className="flex flex-col gap-6 w-full max-w-4xl  justify-center items-center" >
+        <div className="flex flex-col gap-6 w-[635px] max-w-4xl  justify-center items-center" >
           {jobs.map((job, index) => (
             <JobCard key={index} {...job} />
           ))}
