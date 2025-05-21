@@ -1,3 +1,5 @@
+"use client";
+
 import {
   FiSearch,
   FiFilter,
@@ -5,16 +7,12 @@ import {
   FiBell,
   FiSettings,
 } from "react-icons/fi";
+import { poppinsMedium } from "../app/fonts";
 
 export default function Navbar() {
   return (
     <div
-      className="w-full px-6 pb-3 flex items-center justify-between backdrop-blur-sm"
-      style={{
-        background:
-          "linear-gradient(90deg, #F5FBFF 0%, #C5E5FF 55%, #d2ebfe 100%)",
-        boxShadow: "0px 4px 24px 0px #0000000A",
-      }}
+      className={`w-full px-6 pb-3 flex items-center justify-between backdrop-blur-sm bg-transparent ${poppinsMedium.className}`}
     >
       <div className="mt-[9px] h-[56px] flex items-center gap-[45px]">
         {/* Nav Items */}
@@ -29,7 +27,7 @@ export default function Navbar() {
                 className={`text-sm font-medium px-4 py-2 rounded-full transition-all duration-200 ${
                   item === "Jobs"
                     ? "bg-[#66BAFF] text-white"
-                    : "text-gray-700 hover:text-blue-500"
+                    : "text-gray-500 hover:text-blue-500"
                 }`}
               >
                 {item}
@@ -53,15 +51,14 @@ export default function Navbar() {
 
           {/* Action Icons */}
           <div className="ml-[60px]">
-
-          {[FiMessageCircle, FiBell, FiSettings].map((Icon, idx) => (
-            <button
-              key={idx}
-              className="bg-white p-2 rounded-full shadow hover:bg-blue-50 transition ml-[12px]"
-            >
-              <Icon className="text-gray-500 w-5 h-5" />
-            </button>
-          ))}
+            {[FiMessageCircle, FiBell, FiSettings].map((Icon, idx) => (
+              <button
+                key={idx}
+                className="bg-white p-2 rounded-full shadow hover:bg-blue-50 transition ml-[12px]"
+              >
+                <Icon className="text-gray-500 w-5 h-5" />
+              </button>
+            ))}
           </div>
         </div>
       </div>

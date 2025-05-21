@@ -1,14 +1,15 @@
 import { Briefcase, IndianRupee, MapPin, FileText } from "lucide-react";
+import { poppinsMedium, inter } from "../app/fonts";
 
 export default function JobCard() {
   return (
     <div
-      className="bg-white rounded-2xl p-5 w-full max-w-2xl"
+      className={`bg-white rounded-2xl p-5 w-full max-w-2xl ${inter.className}`}
       style={{ boxShadow: "0 0 20px rgba(102, 186, 255, 0.4)" }}
     >
       {/* Title and Company */}
-      <div>
-        <h3 className="text-lg font-semibold">Web Designer</h3>
+      <div className={poppinsMedium.className}>
+        <h3 className="text-lg font-medium">Web Designer</h3>
         <p className="text-gray-500 text-sm">Digitally Pvt. Ltd.</p>
       </div>
 

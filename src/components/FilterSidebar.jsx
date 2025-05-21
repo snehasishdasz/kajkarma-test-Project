@@ -47,7 +47,7 @@ export default function FilterSidebar() {
                       : [...prev, keyword]
                   )
                 }
-                className={`flex items-center justify-start gap-1 w-fit h-[20px] px-2 text-[8px] rounded-[30px] ${
+                className={`flex items-center justify-start gap-1 w-fit h-[20px] px-2 text-[8px] bg rounded-[30px] ${
                   selectedKeyword.includes(keyword)
                     ? "bg-[#E6F4FF] text-[#39A6FF] border border-[#39A6FF]"
                     : "text-[#39A6FF] border border-[#B3E0FF]"
