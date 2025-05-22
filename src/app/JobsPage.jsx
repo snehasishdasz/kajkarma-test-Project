@@ -3,7 +3,6 @@ import JobCard from "@/components/JobCard";
 import JobTools from "@/components/JobTools";
 import Navbar from "@/components/Navbar";
 
-
 export default function JobsPage() {
   const jobs = [
     {
@@ -43,10 +42,9 @@ export default function JobsPage() {
     },
   ];
 
-
   return (
     <div
-      className="min-h-screen  p-4 pt-0"
+      className="min-h-screen  p-4 pt-0 mt-2"
       style={{
         background:
           "linear-gradient(90deg, #F5FBFF 0%, #C5E5FF 55%, #d2ebfe 70%)",
@@ -55,7 +53,7 @@ export default function JobsPage() {
       <Navbar />
       <div className="flex mx-[136px] gap-[34px]">
         <FilterSidebar />
-        <div className="flex flex-col gap-6 w-[635px] max-w-4xl  justify-center items-center" >
+        <div className="flex flex-col gap-6 w-[635px] max-w-4xl  justify-center items-center">
           {jobs.map((job, index) => (
             <JobCard key={index} {...job} />
           ))}
